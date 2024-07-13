@@ -2,7 +2,40 @@ https://portfolio-omega-rosy-17.vercel.app/
 
 
 # React + Vite
+# Features
+<ul>
+   <li>This is the Modern Blog Website</li> </br>
+   <li>Built using React, Tailwind Css, Vite, eslint</li> </br>
+   <li>Responsive for different devices</li> </br>
+   <li>Optimized for React.js and Vercel</li> </br>
+</ul>
+# Getting Started Locally
 
+1. Clone this repository to your local machine:
+
+   ```bash
+   https://github.com/princeessjay/Portfolio.git
+   ```
+
+2. Move to the cloned directory:
+
+   ```bash
+   cd Portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the local Server:
+
+   ```bash
+   npm run dev
+   ```
+# License
+Licensed under the [MIT license](https://github.com/princeessjay/Modern_Blog_App/blob/main/LICENSE.md).
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
