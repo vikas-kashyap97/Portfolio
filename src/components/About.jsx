@@ -29,7 +29,7 @@ const About = () => {
           {/* right section */}
           <div className="w-full lg:w-1/2 h-auto lg:h-full lg:ml-5">
             <h1 className="text-xl md:text-2xl lg:text-3xl mt-5 lg:mt-0">
-              My Bio
+              About Me!
             </h1>
             <p className="mt-2 lg:mt-5">
               As a dedicated Front-End Developer with over two years of hands-on experience, I bring proficiency in crafting dynamic, user-centric solutions. From frontend aesthetics to interactive functionality, I thrive on translating concepts into robust digital experiences. With a keen eye for detail and a passion for innovation, I am committed to delivering high-quality, responsive, and visually appealing solutions that exceed expectations. Let's collaborate to bring your vision to life and drive success in the digital realm.
