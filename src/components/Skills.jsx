@@ -7,7 +7,7 @@ const Skills = () => {
   const skill = useRef();
 
   useEffect(() => {
-    animateBox(skill);
+    animateBox(skill.current);
   }, []);
 
   return (
@@ -19,13 +19,11 @@ const Skills = () => {
         <h2 className="text-sm md:text-lg lg:text-xl mt-5 text-center text-blue-500">
           I Work Hard to Improve My Skills Regularly
         </h2>
-        <div className="w-full md:w-4/5 grid grid-cols-2 gap-12 mx-auto md:mt-5 lg:mt-10 p-5">
-          {skillsArr.map((skill, index) => (
+        <div className="w-full md:w-4/5 grid grid-cols-1 md:grid-cols-3 gap-12 mx-auto md:mt-5 lg:mt-10 p-5">
+          {skillsArr.map((skill) => (
             <div
               key={skill.id}
-              className={`mb-10 hover:scale-105 transition-transform ${
-                index === skillsArr.length - 1 ? "place-self-center" : ""
-              }`}
+              className="mb-10 hover:scale-105 transition-transform"
             >
               <div className="flex justify-between items-center">
                 <h1>{skill.skillName}</h1>
