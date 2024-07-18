@@ -24,7 +24,7 @@ const Skills = () => {
             <div
               key={skill.id}
               className={`mb-10 hover:scale-105 transition-transform ${
-                index === skillsArr.length - 1 ? "col-span-2 text-center" : ""
+                index === skillsArr.length - 1 ? "col-span-1 text-center" : ""
               }`}
             >
               <div className="flex justify-between items-center">
