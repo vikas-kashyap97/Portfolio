@@ -36,6 +36,11 @@ export const skillsArr = [
   },
   {
     id: 8,
+    skillName: "Git",
+    value: 95,
+  },
+  {
+    id: 9,
     skillName: "Github",
     value: 95,
   },
