@@ -90,6 +90,32 @@ const Projects = () => {
               </Button>
             </div>
           </div>
+          
+          {/* project four */}
+          <div className=" md:w-1/2 rounded-lg p-5 shadow-lg  hover:scale-105 transition-transform">
+            <h1 className="text-sm md:text-lg lg:text-xl mb-2 ">
+            ECHO VERSE Blog Application
+            </h1>
+            <img
+              src="images/blog 1.JPG"
+              alt="project-img"
+              className="h-60 w-full rounded-lg"
+            />
+
+            <div className="flex gap-10 mt-5 justify-start">
+              <Button className="px-6 lg:px-8 py-3 lg:py-4  rounded-md bg-gradient-to-r from-blue-500 to-indigo-900 hover:scale-105">
+                <a href="https://blog-app-cwv.netlify.app/">
+                  Live
+                </a>
+              </Button>
+              <Button className="px-6 lg:px-8 py-3 lg:py-4  rounded-md bg-gradient-to-r from-blue-500 to-indigo-900 hover:scale-105">
+                <a href="https://github.com/princeessjay/BLOG_FRONTEND.git">
+                  Github
+                </a>
+              </Button>
+            </div>
+          </div>
+          
         </div>
       </section>
     </>
