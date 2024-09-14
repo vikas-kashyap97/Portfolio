@@ -16,22 +16,22 @@ export const skillsArr = [
   },
   {
     id: 4,
-    skillName: "React JS",
-    value: 85,
-  },
-  {
-    id: 5,
     skillName: "Tailwind CSS",
     value: 85,
   },
   {
+    id: 5,
+    skillName: "React JS",
+    value: 85,
+  },
+  {
     id: 6,
-    skillName: "Artificial Intelligence",
+    skillName: "MongoDB",
     value: 90,
   },
   {
     id: 7,
-    skillName: "React Router",
+    skillName: "Express.js",
     value: 80,
   },
   {
@@ -41,7 +41,7 @@ export const skillsArr = [
   },
   {
     id: 9,
-    skillName: "Github",
+    skillName: "APIs",
     value: 95,
   },
 ];
