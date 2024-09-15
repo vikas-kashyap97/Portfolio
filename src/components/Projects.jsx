@@ -124,7 +124,7 @@ const Projects = () => {
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-blue-500 to-indigo-900 hover:scale-105">
-              <a href="https://jobly-git-master-vikas-kashyaps-projects-2265fcb6.vercel.app/">
+              <a href="https://jobly-cwv.netlify.app/">
                 Live
               </a>
             </Button>
