@@ -1,7 +1,8 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa6";
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaGit } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiRedux, SiTailwindcss, SiReactrouter } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiGithubcopilot } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
+import { DiMongodb } from "react-icons/di";
 import { useEffect, useRef } from "react";
 import { animateBox } from "./animation";
 
@@ -38,13 +39,21 @@ const Hero = () => {
 
               <IoLogoJavascript className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-yellow-600 hover:scale-110 transition-transform" />
 
+              <SiTailwindcss className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-700 hover:scale-110 transition-transform" />
+
               <FaReact className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
 
-              <SiTailwindcss className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-700 hover:scale-110 transition-transform" />
+              <DiMongodb  className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+
+              <SiExpress className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+
+              <FaGit className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 hover:scale-110 transition-transform" />
+
+              <FaGithub className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 hover:scale-110 transition-transform" />
 
               <GiArtificialIntelligence className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
 
-              <FaGithub className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 hover:scale-110 transition-transform" />
+              <SiGithubcopilot className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ const Footer = () => {
           </IconButton>
         </a>
 
-        <a href="https://github.com/princeessjay">
+        <a href="https://github.com/vikas-kashyap97">
           <IconButton>
             <FaGithub className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-blue-500 hover:scale-110 transition-transform" />
           </IconButton>
