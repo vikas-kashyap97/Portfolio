@@ -45,7 +45,7 @@ export const skillsArr = [
     value: 85,
   },
   {
-    id: 9,
+    id: 10,
     skillName: "APIs",
     value: 95,
   },
