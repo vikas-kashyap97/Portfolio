@@ -25,36 +25,36 @@ const Contact = () => {
           CONTACT
         </h1>
 
-        <h2 className="text-sm md:text-lg lg:text-xl my-5 text-center text-blue-500">
+        <h2 className="text-sm md:text-lg lg:text-xl my-5 text-center text-green-500">
           I Want to Hear from You
         </h2>
         <div className="w-full md:w-4/5 mx-auto p-5 flex flex-col md:flex-row justify-between">
           {/* left section */}
           <div className="w-full md:w-1/2">
             <div className="flex items-center mb-5">
-              <FaLocationDot className="text-5xl md:text-6xl p-4 rounded-full bg-blue-500" />
+              <FaLocationDot className="text-5xl md:text-6xl p-4 rounded-full bg-green-500" />
               <div className="ml-5">
                 <span>Address</span>
                 <br />
-                <span className="text-gray-500 hover:text-black transition-colors">Hardoi, Uttar Pradesh</span>
+                <span className="text-green-500 hover:text-green-400  transition-colors">Hardoi, Uttar Pradesh</span>
               </div>
             </div>
 
             <div className="flex items-center mb-5">
-              <FaMessage className="text-5xl md:text-6xl p-4 rounded-full bg-blue-500 " />
+              <FaMessage className="text-5xl md:text-6xl p-4 rounded-full bg-green-500 " />
               <div className="ml-5">
                 <span>Email</span>
                 <br />
-                <span className="text-gray-500 hover:text-black transition-colors">vikaskashyaprock@gmail.com</span>
+                <span className="text-green-500 hover:text-green-400 transition-colors">vikaskashyaprock@gmail.com</span>
               </div>
             </div>
 
             <div className="flex items-center mb-5">
-              <FaPhone className="text-5xl md:text-6xl p-4 rounded-full bg-blue-500" />
+              <FaPhone className="text-5xl md:text-6xl p-4 rounded-full bg-green-500" />
               <div className="ml-5">
                 <span>Phone</span>
                 <br />
-                <span className="text-gray-500 hover:text-black transition-colors">+91 8542050782</span>
+                <span className="text-green-500 hover:text-green-400 transition-colors">+91 8542050782</span>
               </div>
             </div>
           </div>
@@ -67,52 +67,57 @@ const Contact = () => {
             >
               <Input
                 size="lg"
-                color="white"
+                color="green"
                 type="text"
                 id="name"
                 name="name"
                 label="Your Name"
                 variant="outlined"
                 required
+                className='text-green-500'
               />
               <ValidationError prefix="Name" field="name" errors={state.errors} />
 
               <Input
                 size="lg"
-                color="white"
+                color="green"
                 type="email"
                 id="email"
                 name="email"
                 label="Your Email"
                 variant="outlined"
                 required
+                className='text-green-500'
               />
               <ValidationError prefix="Email" field="email" errors={state.errors} />
 
               <Input
                 size="lg"
-                color="white"
+                color="green"
                 type="number"
                 id="phone"
                 name="phone"
                 label="Your Phone"
                 variant="outlined"
                 required
+                className='text-green-500'
               />
               <ValidationError prefix="Phone" field="phone" errors={state.errors} />
 
               <Textarea
                 label="Message..."
+                color="green"
                 size="lg"
                 id="message"
                 name="message"
                 required
+                className='text-green-500'
               />
               <ValidationError prefix="Message" field="message" errors={state.errors} />
 
               <Button
                 type="submit"
-                className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-blue-500 to-indigo-900 hover:scale-105"
+                className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 text-black hover:scale-105"
                 disabled={state.submitting}
               >
                 Submit Now

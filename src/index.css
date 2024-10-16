@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 @layer {
-  .bg-forth {
-    background-color: #005B41;
-    color: #e5ff00;
-  }
+
 
   .font{
     font-family: "Sedan SC", serif;

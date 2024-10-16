@@ -20,40 +20,40 @@ const Hero = () => {
         className="h-screen w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-5"
       >
         <div className=" mt-10 md:mt-0">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-400">
             Hello,👋
-            <br /> I am <span className="text-blue-600">Vikas</span>,
+            <br /> I am <span className="text-green-500">Vikas</span>,
           </h1>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-500">
             Front-End Developer.
           </h1>
 
           <div className="flex items-center gap-5 mt-10">
-            <h1 className="text-sm md:text-lg lg:text-xl border-r-2 border-white pr-2">
+            <h1 className="text-sm md:text-lg lg:text-xl border-r-2 text-green-500 border-white pr-2">
               Tech Stack
             </h1>
             <div className="flex items-center flex-wrap gap-5 m-2">
-              <FaHtml5 className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-red-600 hover:scale-110 transition-transform" />
+              <FaHtml5 className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <FaCss3Alt className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-400 hover:scale-110 transition-transform" />
+              <FaCss3Alt className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <IoLogoJavascript className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-yellow-600 hover:scale-110 transition-transform" />
+              <IoLogoJavascript className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <SiTailwindcss className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-700 hover:scale-110 transition-transform" />
+              <SiTailwindcss className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <FaReact className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+              <FaReact className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <DiMongodb  className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+              <DiMongodb  className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <SiExpress className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+              <SiExpress className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <FaGit className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 hover:scale-110 transition-transform" />
+              <FaGit className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <FaGithub className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 hover:scale-110 transition-transform" />
+              <FaGithub className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <GiArtificialIntelligence className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+              <GiArtificialIntelligence className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
 
-              <SiGithubcopilot className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-blue-600 hover:scale-110 transition-transform" />
+              <SiGithubcopilot className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
             </div>
           </div>
         </div>
