@@ -44,25 +44,25 @@ const Navbar = () => {
           <div className="flex flex-col" onClick={() => setOpen(false)}>
             <a
               href="#about"
-              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 border-b border-green-800"
+              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800"
             >
               About
             </a>
             <a
               href="#skills"
-              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 border-b border-green-800" 
+              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800" 
             >
               Skills
             </a>
             <a
               href="#project"
-              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 border-b border-green-800"
+              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800"
             >
               Project
             </a>
             <a
               href="#contact"
-              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 border-b border-green-800"
+              className="px-5 py-3 text-lg transition-colors text-green-400 hover:bg-green-500 hover:text-black border-b border-green-800"
             >
               Contact
             </a>
