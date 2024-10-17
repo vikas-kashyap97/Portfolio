@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className="mb-2 flex items-center justify-end p-4">
             <IconButton
               variant="text"
-              color="white"
+              color="green"
               onClick={() => setOpen(false)}
             >
               <RxCross2 size={26} />
