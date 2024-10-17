@@ -15,15 +15,15 @@ const About = () => {
 
   return (
     <>
-      <section ref={about} id="about" className="w-full">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 pl-2">
+      <section ref={about} id="about" className="w-full py-10 md:py-20">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-green-500 pl-4 md:pl-8 ">
           ABOUT ME
         </h1>
 
         <div className="h-auto w-full md:h-[500px] flex flex-col md:flex-row justify-between items-center md:w-4/5 mx-auto p-5 mt-10">
-          {/* left section */}
-          <div 
-            className="w-full lg:w-1/2 h-[50vh] md:h-full relative flex justify-center items-center"
+          {/* Left Section */}
+          <div
+            className="w-full lg:w-1/2 h-[30vh] md:h-full relative flex justify-center items-center"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -31,7 +31,7 @@ const About = () => {
               <img
                 src="images/propic.jpeg"
                 alt="my-img"
-                className="h-[270px] lg:h-[450px] rounded-xl ring-2 lg:ring-4 ring-green-700 transition-all duration-300 ease-out"
+                className="h-[220px] sm:h-[270px] lg:h-[450px] rounded-xl ring-2 lg:ring-4 ring-green-700 transition-all duration-300 ease-out"
               />
               <div className="glitch-layers">
                 <div className="glitch-layer"></div>
@@ -41,16 +41,16 @@ const About = () => {
             </div>
           </div>
 
-          {/* right section */}
-          <div className="w-full lg:w-1/2 h-auto lg:h-full lg:ml-5">
-            <h1 className="text-xl md:text-2xl lg:text-3xl mt-5 text-green-400 lg:mt-0">
+          {/* Right Section */}
+          <div className="w-full lg:w-1/2 h-auto lg:h-full lg:ml-5 mt-6 md:mt-0">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-5 text-green-400 md:mt-14 lg:mt-0">
               My Bio
             </h1>
-            <p className="mt-2 lg:mt-5 text-green-500">
+            <p className="mt-2 lg:mt-5 text-green-500 text-sm sm:text-base md:text-lg lg:text-2xl ">
               As a dedicated Front-End Developer with over one years of hands-on experience, I bring proficiency in crafting dynamic, user-centric solutions. From frontend aesthetics to interactive functionality, I thrive on translating concepts into robust digital experiences. With a keen eye for detail and a passion for innovation, I am committed to delivering high-quality, responsive, and visually appealing solutions that exceed expectations. Let's collaborate to bring your vision to life and drive success in the digital realm.
             </p>
 
-            <table className="w-full mt-5 lg:mt-10">
+            <table className="w-full mt-5 lg:mt-10 text-sm md:text-base">
               <tbody>
                 <tr>
                   <td className="p-1 lg:p-3">
@@ -75,7 +75,7 @@ const About = () => {
               </tbody>
             </table>
 
-            <Button className="px-6 lg:px-8 py-3 lg:py-4 mt-5 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105 transition-transform">
+            <Button className="px-6 lg:px-8 py-3 lg:py-4 mt-5  rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105 transition-transform">
               <a className="text-black"
                 href="/images/Vikas Kashyap Frontend 1Yrs.pdf"
                 download="/images/Vikas Kashyap Frontend 1Yrs.pdf"
@@ -112,7 +112,6 @@ const About = () => {
           height: 100%;
           background: url('images/propic.jpeg') no-repeat center center;
           background-size: cover;
-          mix-blend-mode: none;
         }
         .glitch-layer:nth-child(1) {
           left: 2px;

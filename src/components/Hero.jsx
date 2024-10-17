@@ -17,67 +17,59 @@ const Hero = () => {
     <>
       <section
         ref={hero}
-        className="h-screen w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-5"
+        className="relative h-screen w-full flex flex-col-reverse lg:flex-row justify-evenly items-center p-5 lg:p-10"
       >
-        <div className=" mt-10 md:mt-0">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-400">
+        {/* Left Section */}
+        <div className="mt-10 md:mt-0 text-center lg:text-left">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 drop-shadow-lg">
             Hello,👋
             <br /> I am <span className="text-green-500">Vikas</span>,
           </h1>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-500">
+          <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold text-green-500 drop-shadow-lg">
             Front-End Developer.
           </h1>
 
-          <div className="flex items-center gap-5 mt-10">
-            <h1 className="text-sm md:text-lg lg:text-xl border-r-2 text-green-500 border-white pr-2">
+          {/* Additional Descriptive Content */}
+          <p className="mt-3 text-base md:text-lg lg:text-2xl xl:text-4xl text-green-400 max-w-xl mx-auto lg:mx-0">
+            My focus lies in writing clean, maintainable code while continuously
+            improving performance. Let's collaborate on bringing creative
+            solutions to life and making the web a more interactive space.
+          </p>
+
+          {/* Tech Stack Section */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5 mt-10">
+            <h1 className="text-sm md:text-lg lg:text-3xl border-r-2 text-green-500 border-white pr-2">
               Tech Stack
             </h1>
-            <div className="flex items-center flex-wrap gap-5 m-2">
-              <FaHtml5 className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <FaCss3Alt className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <IoLogoJavascript className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <SiTailwindcss className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <FaReact className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <DiMongodb  className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <SiExpress className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <FaGit className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <FaGithub className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <GiArtificialIntelligence className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
-
-              <SiGithubcopilot className="h-6 w-6 md:h-6 md:w-8 lg:h-12 lg:w-12 text-green-400 hover:scale-110 transition-transform" />
+            <div className="flex items-center justify-center lg:justify-start flex-wrap gap-5 m-2">
+              {/* Tech Stack Icons with alternating float effect */}
+              <FaHtml5 className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <FaCss3Alt className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
+              <IoLogoJavascript className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <SiTailwindcss className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
+              <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <DiMongodb className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
+              <SiExpress className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <FaGit className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
+              <FaGithub className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <GiArtificialIntelligence className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
+              <SiGithubcopilot className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
             </div>
           </div>
         </div>
 
-        {/* main img */}
-        <div className="relative">
-          {/* <div className="h-7 w-7 bg-blue-500 rounded-full absolute top-2 left-10 shadow-[inset_0_0_15px_rgba(0,0,0,0.7)] contrast-200"></div>
-          <div className="h-10 w-10 bg-blue-500 rounded-full absolute bottom-0 right-3 shadow-[inset_0_0_15px_rgba(0,0,0,0.7)] contrast-200"></div>
-          <div className="h-4 w-4 bg-blue-500 rounded-full absolute top-0 left-20 shadow-[inset_0_0_5px_rgba(0,0,0,0.7)] contrast-200"></div>
-          <div className="h-5 w-5 bg-blue-500 rounded-full absolute bottom-10 right-0 shadow-[inset_0_0_10px_rgba(0,0,0,0.7)] contrast-200"></div>
-          <div className="h-10 w-10 bg-blue-500 rounded-full absolute top-12 left-0 shadow-[inset_0_0_15px_rgba(0,0,0,0.7)] contrast-200"></div>
-          <div className="h-6 w-6 bg-blue-500 rounded-full absolute bottom-0 right-20 shadow-[inset_0_0_10px_rgba(0,0,0,0.7)] contrast-200"></div>
-
+        {/* Right Section - Main Image */}
+        <div className="relative flex justify-center lg:justify-end">
           <img
-            className="h-60 w-60 sm:h-72 sm:w-72 md:h-96 md:w-96 mt-10 lg:mt-0 rounded-full hover:scale-105 transition-transform "
-            src="images/profile-pic.png"
-            alt="main-img"
-          /> */}
-
-          <img
-            className="h-72 w-72 sm:h-80 sm:w-80 md:h-[500px] md:w-[500px] mt-10 lg:mt-0 rounded-full hover:scale-105 transition-transform drop-shadow-lg"
+            className="h-48 w-48 sm:h-64 sm:w-64 md:h-72 md:w-72 lg:h-[450px] lg:w-[450px] mt-10 lg:mt-0 rounded-full object-cover hover:scale-105 transition-transform drop-shadow-xl"
             src="images/3d-img.webp"
             alt="main-img"
           />
+          {/* Animated Circles */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute h-[230px] w-[230px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px] border-4 border-green-500 rounded-full animate-pulse" />
+            <div className="absolute h-[150px] w-[150px] sm:h-[250px] sm:w-[250px] md:h-[350px] md:w-[350px] lg:h-[350px] lg:w-[350px] border-4 border-green-400 rounded-full animate-ping" />
+          </div>
         </div>
       </section>
     </>

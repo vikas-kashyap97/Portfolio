@@ -1,16 +1,4 @@
-/* eslint-disable no-undef */
-// const withMT = require("@material-tailwind/react/utils/withMT");
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
+
 
 const withMT = require("@material-tailwind/react/utils/withMT");
  
@@ -22,7 +10,22 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        floatUp: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        floatDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(20px)' },
+        },
+      },
+      animation: {
+        floatUp: 'floatUp 3s ease-in-out infinite',
+        floatDown: 'floatDown 3s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
 });
