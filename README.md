@@ -1,6 +1,6 @@
 # Live link -
 
-[Live link](https://portfolio-omega-rosy-17.vercel.app/)
+[Live link](https://vikasportfolio24.vercel.app/)
 
 
 # React + Vite
