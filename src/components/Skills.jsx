@@ -44,66 +44,88 @@ const Skills = () => {
                   {skill.skillName === "HTML" && (
                     <>
                       <FaHtml5 className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "CSS" && (
                     <>
                       <FaCss3Alt className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "JavaScript" && (
                     <>
                       <IoLogoJavascript className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "Tailwind CSS" && (
                     <>
                       <SiTailwindcss className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "React JS" && (
                     <>
                       <FaReact className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "MongoDB" && (
                     <>
                       <DiMongodb className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "Express.js" && (
                     <>
                       <SiExpress className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "Git" && (
                     <>
                       <FaGit className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "GitHub" && (
                     <>
                       <FaGithub className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                   {skill.skillName === "APIs" && (
                     <>
                       <AiFillApi className="text-green-400 text-2xl hover:scale-110 transform transition-transform duration-500" />
-                      <span className="text-green-500 text-lg font-semibold">{skill.skillName}</span>
+                      <span className="text-green-500 sm:text-lg md:text-xl lg:text-2xl font-semibold">
+                        {skill.skillName}
+                      </span>
                     </>
                   )}
                 </div>
 
-                <h1 className="text-green-500 font-semibold text-lg">{skill.value}%</h1>
+                <h1 className="text-green-500 font-semibold text-lg">
+                  {skill.value}%
+                </h1>
               </div>
 
               {/* Progress Bar with a smooth animation */}

@@ -25,7 +25,7 @@ const Contact = () => {
           CONTACT
         </h1>
 
-        <h2 className="text-sm md:text-lg lg:text-xl my-5 text-center text-green-500">
+        <h2 className="text-sm md:text-lg lg:text-2xl my-5 text-center text-green-500">
           I Want to Hear from You
         </h2>
         <div className="w-full md:w-4/5 mx-auto p-5 flex flex-col md:flex-row justify-between">
@@ -34,7 +34,7 @@ const Contact = () => {
             <div className="flex items-center mb-5">
               <FaLocationDot className="text-5xl md:text-6xl p-4 rounded-full bg-green-500" />
               <div className="ml-5">
-                <span>Address</span>
+                <span className='text-green-600 lg:text-xl'>Address</span>
                 <br />
                 <span className="text-green-500 hover:text-green-400  transition-colors">Hardoi, Uttar Pradesh</span>
               </div>
@@ -43,7 +43,7 @@ const Contact = () => {
             <div className="flex items-center mb-5">
               <FaMessage className="text-5xl md:text-6xl p-4 rounded-full bg-green-500 " />
               <div className="ml-5">
-                <span>Email</span>
+                <span className='text-green-600 lg:text-xl'>Email</span>
                 <br />
                 <span className="text-green-500 hover:text-green-400 transition-colors">vikaskashyaprock@gmail.com</span>
               </div>
@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="flex items-center mb-5">
               <FaPhone className="text-5xl md:text-6xl p-4 rounded-full bg-green-500" />
               <div className="ml-5">
-                <span>Phone</span>
+                <span className='text-green-600 lg:text-xl'>Phone</span>
                 <br />
                 <span className="text-green-500 hover:text-green-400 transition-colors">+91 8542050782</span>
               </div>

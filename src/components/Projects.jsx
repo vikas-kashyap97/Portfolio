@@ -13,7 +13,9 @@ const Projects = () => {
 
   return (
     <section ref={project} id="project" className="mt-10 md:mt-20 w-full">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 pl-2">PROJECTS</h1>
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-green-500 pl-2">
+        PROJECTS
+      </h1>
       <div className="w-full md:w-4/5 mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
         
         {/* Project 1 */}
@@ -24,7 +26,7 @@ const Projects = () => {
           <img
             src="images/Frontend dashboard.jpg"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
@@ -48,7 +50,7 @@ const Projects = () => {
           <img
             src="images/Admin dashboard.jpg"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
@@ -72,7 +74,7 @@ const Projects = () => {
           <img
             src="images/blog 1.JPG"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
@@ -96,7 +98,7 @@ const Projects = () => {
           <img
             src="images/Dashboard.jpg"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
@@ -120,7 +122,7 @@ const Projects = () => {
           <img
             src="images/Jobly.JPG"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
@@ -139,21 +141,21 @@ const Projects = () => {
         {/* Project 6 */}
         <div className="rounded-lg p-5 shadow-lg hover:scale-105 transition-transform">
           <h1 className="text-sm md:text-lg lg:text-xl text-green-400 mb-2">
-            Nexus
+            Open AI
           </h1>
           <img
-            src="/images/images.avif"
+            src="images/openai.webp"
             alt="project-img"
-            className="h-60 w-full rounded-lg"
+            className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://nexus-cwv.netlify.app/">
+              <a className="text-black" href="https://openaiapp.netlify.app/">
                 Live
               </a>
             </Button>
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://github.com/vikas-kashyap97/NEXUS.git">
+              <a className="text-black" href="https://github.com/vikas-kashyap97/OpenAI-app.git">
                 Github
               </a>
             </Button>

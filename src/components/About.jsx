@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { animateBox } from "./animation";
 import { Button } from "@material-tailwind/react";
 
+
 const About = () => {
   const about = useRef();
   const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +21,7 @@ const About = () => {
           ABOUT ME
         </h1>
 
-        <div className="h-auto w-full md:h-[500px] flex flex-col md:flex-row justify-between items-center md:w-4/5 mx-auto p-5 mt-10">
+        <div className="h-auto w-full md:h-[500px] lg:h-[650px] flex flex-col md:flex-row justify-between items-center md:w-4/5 mx-auto p-5 mt-12">
           {/* Left Section */}
           <div
             className="w-full lg:w-1/2 h-[30vh] md:h-full relative flex justify-center items-center"
@@ -47,29 +48,29 @@ const About = () => {
               My Bio
             </h1>
             <p className="mt-2 lg:mt-5 text-green-500 text-sm sm:text-base md:text-lg lg:text-2xl ">
-              As a dedicated Front-End Developer with over one years of hands-on experience, I bring proficiency in crafting dynamic, user-centric solutions. From frontend aesthetics to interactive functionality, I thrive on translating concepts into robust digital experiences. With a keen eye for detail and a passion for innovation, I am committed to delivering high-quality, responsive, and visually appealing solutions that exceed expectations. Let's collaborate to bring your vision to life and drive success in the digital realm.
+              As a dedicated <a className="lg:text-3xl font-semibold">Frontend Developer</a> with over one years of hands-on experience, I bring proficiency in crafting <a className="lg:text-3xl font-semibold">dynamic, user-centric solutions.</a> From frontend <a className="lg:text-3xl font-semibold">aesthetics</a> to <a className="lg:text-3xl font-semibold">interactive</a> functionality, I thrive on translating concepts into <a className="lg:text-3xl font-semibold">robust digital experiences.</a> With a keen eye for detail and a <a className="lg:text-3xl font-semibold">passion for innovation,</a> I am committed to delivering <a className="lg:text-3xl font-semibold">high-quality, responsive,</a> and <a className="lg:text-3xl font-semibold">visually appealing solutions</a> that exceed expectations. Let's <a className="lg:text-3xl font-semibold">collaborate</a> to bring your vision to life and drive <a className="lg:text-3xl font-semibold">success</a> in the digital realm.
             </p>
 
             <table className="w-full mt-5 lg:mt-10 text-sm md:text-base">
               <tbody>
                 <tr>
                   <td className="p-1 lg:p-3">
-                    <span className="text-green-400">Name</span> <br />
-                    <span className="text-green-500 hover:text-green-400 transition-colors">Vikas Kashyap</span>
+                    <span className="text-green-400 lg:text-xl">Name</span> <br />
+                    <span className="text-green-500 hover:text-green-500 transition-colors">Vikas Kashyap</span>
                   </td>
                 </tr>
                 <tr>
                   <td className="p-1 lg:p-3">
-                    <span className="text-green-400">Email</span>
+                    <span className="text-green-400 lg:text-xl">Email</span>
                     <br />
-                    <span className="text-green-500 hover:text-green-400 transition-colors">vikaskashyaprock@gmail.com</span>
+                    <span className="text-green-500 hover:text-green-500 transition-colors">vikaskashyaprock@gmail.com</span>
                   </td>
                 </tr>
                 <tr>
                   <td className="p-1 lg:p-3">
-                    <span className="text-green-400">Phone</span>
+                    <span className="text-green-400 lg:text-xl">Phone</span>
                     <br />
-                    <span className="text-green-500 hover:text-green-400 transition-colors">+91 8542050782</span>
+                    <span className="text-green-500 hover:text-green-500 transition-colors">+91 8542050782</span>
                   </td>
                 </tr>
               </tbody>

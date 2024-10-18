@@ -16,16 +16,16 @@ const Navbar = () => {
           </h1>
         </Link>
         <div className="hidden lg:flex flex-col md:flex-row gap-5 pl-5 md:pl-0 md:gap-10 text-md md:text-xl">
-          <a href="#about" className="hover:text-green-400 text-green-500 transition-colors">
+          <a href="#about" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             About
           </a>
-          <a href="#skills" className="hover:text-green-400 text-green-500 transition-colors">
+          <a href="#skills" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             Skills
           </a>
-          <a href="#project" className="hover:text-green-400 text-green-500 transition-colors">
+          <a href="#project" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             Project
           </a>
-          <a href="#contact" className="hover:text-green-400 text-green-500 transition-colors">
+          <a href="#contact" className="hover:text-green-400 sm:text-lg md:text-xl lg:text-3xl text-green-500 transition-colors">
             Contact
           </a>
         </div>

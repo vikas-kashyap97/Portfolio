@@ -37,23 +37,23 @@ const Hero = () => {
           </p>
 
           {/* Tech Stack Section */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-5 mt-10">
-            <h1 className="text-sm md:text-lg lg:text-3xl border-r-2 text-green-500 border-white pr-2">
+          <div className="flex flex-col lg:flex-row items-center gap-5 mt-10">
+            <h1 className="text-sm md:text-lg lg:text-3xl border-r-2 text-green-500 border-green-400 pr-2">
               Tech Stack
             </h1>
             <div className="flex items-center justify-center lg:justify-start flex-wrap gap-5 m-2">
               {/* Tech Stack Icons with alternating float effect */}
-              <FaHtml5 className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
-              <FaCss3Alt className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
-              <IoLogoJavascript className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
-              <SiTailwindcss className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
-              <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
-              <DiMongodb className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
-              <SiExpress className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
-              <FaGit className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
-              <FaGithub className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
-              <GiArtificialIntelligence className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatUp" />
-              <SiGithubcopilot className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-floatDown" />
+              <FaHtml5 className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <FaCss3Alt className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <IoLogoJavascript className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <SiTailwindcss className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <DiMongodb className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <SiExpress className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <FaGit className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <FaGithub className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <GiArtificialIntelligence className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+              <SiGithubcopilot className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Right Section - Main Image */}
         <div className="relative flex justify-center lg:justify-end">
           <img
-            className="h-48 w-48 sm:h-64 sm:w-64 md:h-72 md:w-72 lg:h-[450px] lg:w-[450px] mt-10 lg:mt-0 rounded-full object-cover hover:scale-105 transition-transform drop-shadow-xl"
+            className="h-48 w-48 pb-12 sm:h-64 sm:w-64 md:h-72 md:w-72 lg:h-[450px] lg:w-[450px] mt-10 lg:mt-0 rounded-full object-cover hover:scale-105 transition-transform drop-shadow-xl"
             src="images/3d-img.webp"
             alt="main-img"
           />

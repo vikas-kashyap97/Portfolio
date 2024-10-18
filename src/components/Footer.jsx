@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <section className="bg-forth text-green w-full flex flex-col items-center mt-10 md:mt-20">
-      <p className="text-sm md:text-lg text-center px-5 md:px-12 text-green-500">
+      <p className="sm:text-lg md:text-xl lg:text-3xl text-center px-5 md:px-12 text-green-500">
         “Let's collaborate synergistically, pooling our diverse talents and perspectives to achieve remarkable outcomes. Together, we can innovate, problem-solve, and propel each other towards success. With open communication, mutual respect, and a shared vision, let's embark on a journey of growth, learning, and achievement. Together, we are unstoppable.” 🙂😉
       </p>
       <div className="flex gap-5 m-5 items-center">
@@ -30,7 +30,7 @@ const Footer = () => {
           </IconButton>
         </a>
       </div>
-      <p className="m-5">vikaskashyaprock@gmail.com</p>
+      <p className="m-5 text-green-500 sm:text-lg md:text-xl lg:text-3xl">vikaskashyaprock@gmail.com</p>
       <Button
         onClick={scrollToTop}
         className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 text-black hover:scale-105 transition-transform my-5"
