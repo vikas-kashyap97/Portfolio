@@ -13,19 +13,19 @@ const Footer = () => {
       </p>
       <div className="flex gap-5 m-5 items-center">
         <a href="https://www.linkedin.com/in/vikas-kashyap8542/">
-          <IconButton>
+          <IconButton className="bg-black">
             <FaLinkedin className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-500 hover:scale-110 bg-black transition-transform" />
           </IconButton>
         </a>
 
         <a href="https://github.com/vikas-kashyap97">
-          <IconButton>
+          <IconButton className="bg-black">
             <FaGithub className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-500 hover:scale-110 bg-black transition-transform" />
           </IconButton>
         </a>
 
         <a href="https://x.com/vikaskashyapro6">
-          <IconButton>
+          <IconButton className="bg-black">
             <FaXTwitter className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-green-500 hover:scale-110 bg-black transition-transform" />
           </IconButton>
         </a>

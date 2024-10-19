@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const RetroLoading = ({ onLoaded }) => {
+const RetroLoading = ({ onLoaded, updateInterval = 10, increment = 2 }) => {
+ 
+  
   const [stage, setStage] = useState('start');
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [loadedResources, setLoadedResources] = useState([]);
-  const audioRef = useRef(null); // To reference the audio element
-
+  const [currentResourceIndex, setCurrentResourceIndex] = useState(0); 
+  const [resourceProgress, setResourceProgress] = useState(0); 
+  const audioRef = useRef(null);
   const resources = [
     'keyboardKeydown1',
     'keyboardKeydown3',
@@ -21,39 +24,41 @@ const RetroLoading = ({ onLoaded }) => {
     if (stage === 'loading') {
       const audio = audioRef.current;
       if (audio) {
-        audio.play(); // Start audio playback
-        audio.addEventListener('timeupdate', handleAudioProgress);
+        audio.play(); 
       }
 
-      return () => {
-        if (audio) {
-          audio.removeEventListener('timeupdate', handleAudioProgress);
-        }
-      };
+      const interval = setInterval(() => {
+        setResourceProgress((prevProgress) => {
+          if (prevProgress >= 100) {
+           
+            setLoadedResources((prevResources) => [...prevResources, resources[currentResourceIndex]]);
+            setCurrentResourceIndex((prevIndex) => prevIndex + 1); 
+
+            
+            if (currentResourceIndex + 1 < resources.length) {
+              return 0;
+            } else {
+              
+              clearInterval(interval);
+              setStage('loaded');
+              return 100;
+            }
+          }
+
+          
+          const newProgress = prevProgress + increment;
+          setLoadingProgress((currentResourceIndex * 100 + newProgress) / resources.length); 
+          return newProgress;
+        });
+      }, updateInterval); 
+
+      return () => clearInterval(interval);
     }
 
     if (stage === 'loaded') {
       onLoaded();
     }
-  }, [stage, loadedResources, resources, onLoaded]);
-
-  const handleAudioProgress = () => {
-    const audio = audioRef.current;
-    if (audio) {
-      const progress = (audio.currentTime / audio.duration) * 100;
-      const newResource = resources[Math.floor((progress / 100) * resources.length)];
-
-      if (newResource && !loadedResources.includes(newResource)) {
-        setLoadedResources((prev) => [...prev, newResource]);
-      }
-
-      setLoadingProgress(progress);
-
-      if (progress >= 100) {
-        setStage('loaded');
-      }
-    }
-  };
+  }, [stage, currentResourceIndex, resources, onLoaded, increment, updateInterval]);
 
   const handleStart = () => {
     setStage('loading');
@@ -89,20 +94,23 @@ const RetroLoading = ({ onLoaded }) => {
             <p>LOADING RESOURCES ({loadedResources.length}/{resources.length}).</p>
             {loadedResources.map((resource, index) => (
               <p key={index}>
-                Loaded {resource} ... {Math.round((index + 1) / resources.length * 100)}%
+                Loaded {resource} ... 100%
               </p>
             ))}
+            {currentResourceIndex < resources.length && (
+              <p>Loading {resources[currentResourceIndex]} ... {resourceProgress}%</p>
+            )}
           </div>
           <div className="w-full bg-green-900 h-2">
             <div
-              className="bg-green-500 h-full transition-all duration-200"
+              className="bg-green-500 h-full transition-all"
               style={{ width: `${loadingProgress}%` }}
             ></div>
           </div>
         </div>
       )}
 
-      {/* Audio element */}
+
       <audio ref={audioRef} src="/audio/Intro.mpeg" />
     </div>
   );

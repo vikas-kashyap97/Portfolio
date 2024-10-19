@@ -1,9 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RetroLoading from './components/RetroLoading';
 import RootLayout from './components/RootLayout';
 import MatrixRain from './components/MatrixRain';
 import customCursor from '/cursor.png'
+
+
+const initializeButtonSound = () => {
+  const audio = new Audio('/audio/Buttons.mpeg');
+
+  const playSound = () => {
+    audio.currentTime = 0;
+    audio.play();
+  };
+
+  const handleClick = (event) => {
+    if (event.target.tagName.toLowerCase() === 'button' || 
+        event.target.tagName.toLowerCase() === 'a') {
+      playSound();
+    }
+  };
+
+  document.addEventListener('click', handleClick);
+
+  return () => {
+    document.removeEventListener('click', handleClick);
+  };
+};
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -11,6 +34,12 @@ function App() {
   const handleLoaded = () => {
     setIsLoaded(true);
   };
+
+  
+  useEffect(() => {
+    const cleanup = initializeButtonSound();
+    return cleanup;
+  }, []);
 
   return (
     <Router>
