@@ -16,7 +16,7 @@ const Hero = () => {
 
     const roleOptions = {
       strings: [
-        "Front-End Developer.", 
+        "Front-End Developer", 
         "a Coder", 
         "UI Designer", 
         "a Creative Thinker", 
