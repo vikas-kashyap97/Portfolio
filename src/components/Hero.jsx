@@ -1,6 +1,6 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaGit } from "react-icons/fa6";
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub, FaGit, FaNode  } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiExpress, SiGithubcopilot } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiGithubcopilot, SiNextdotjs  } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { DiMongodb } from "react-icons/di";
 import { useEffect, useRef } from "react";
@@ -69,9 +69,11 @@ const Hero = () => {
             <FaCss3Alt className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <IoLogoJavascript className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <SiTailwindcss className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
-            <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <DiMongodb className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <SiExpress className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+            <FaReact className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+            <FaNode className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
+            <SiNextdotjs className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <FaGit className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <FaGithub className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
             <GiArtificialIntelligence className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 text-green-400 hover:scale-125 transition-transform animate-pulse" />
