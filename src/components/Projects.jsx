@@ -93,21 +93,21 @@ const Projects = () => {
         {/* Project 4 */}
         <div className="rounded-lg p-5 shadow-lg hover:scale-105 transition-transform">
           <h1 className="text-sm md:text-lg lg:text-xl text-green-400 mb-2">
-            Real-Time Dashboard
+            Device Tracker
           </h1>
           <img
-            src="images/Dashboard.jpg"
+            src="images/Device tacker.jpeg"
             alt="project-img"
             className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://dashboard-beryl-six.vercel.app/">
+              <a className="text-black" href="https://device-tracker-zkm4.onrender.com/">
                 Live
               </a>
             </Button>
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://github.com/princeessjay/Dashboard.git">
+              <a className="text-black" href="https://github.com/vikas-kashyap97/Device-Tracker.git">
                 Github
               </a>
             </Button>
@@ -141,21 +141,21 @@ const Projects = () => {
         {/* Project 6 */}
         <div className="rounded-lg p-5 shadow-lg hover:scale-105 transition-transform">
           <h1 className="text-sm md:text-lg lg:text-xl text-green-400 mb-2">
-            Open AI
+            CSV-Query
           </h1>
           <img
-            src="images/openai.webp"
+            src="images/csv.jpeg"
             alt="project-img"
             className="h-40 sm:h-48 md:h-60 lg:h-72 xl:h-80 w-full rounded-lg"
           />
           <div className="flex gap-5 mt-5 justify-start">
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://openaiapp.netlify.app/">
+              <a className="text-black" href="https://csv-query.netlify.app/login">
                 Live
               </a>
             </Button>
             <Button className="px-6 lg:px-8 py-3 lg:py-4 rounded-md bg-gradient-to-r from-green-500 to-green-700 hover:scale-105">
-              <a className="text-black" href="https://github.com/vikas-kashyap97/OpenAI-app.git">
+              <a className="text-black" href="https://github.com/vikas-kashyap97/CSV-Query.git">
                 Github
               </a>
             </Button>
