@@ -10,14 +10,14 @@ const RetroLoading = ({ onLoaded, updateInterval = 10, increment = 2 }) => {
   const [resourceProgress, setResourceProgress] = useState(0); 
   const audioRef = useRef(null);
   const resources = [
-    'keyboardKeydown1',
-    'keyboardKeydown3',
-    'keyboardKeydown2',
-    'keyboardKeydown4',
-    'keyboardKeydown6',
-    'keyboardKeydown5',
-    'ccType',
-    'startup'
+    'Keydown 1 initializing',
+    'Keydown 2 initializing',
+    'Keydown 3 initializing',
+    'Keydown 4 initializing',
+    'Keydown 5 initializing',
+    'Keydown 6 initializing',
+    'CC Type',
+    'Startup'
   ];
 
   useEffect(() => {
