@@ -40,6 +40,8 @@
 Licensed under the [MIT license](https://github.com/princeessjay/Modern_Blog_App/blob/main/LICENSE.md).
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Lines of code - 9968
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
