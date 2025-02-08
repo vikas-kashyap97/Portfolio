@@ -16,7 +16,7 @@
 1. Clone this repository to your local machine:
 
    ```bash
-   https://github.com/princeessjay/Portfolio.git
+   https://github.com/vikas-kashyap97/Portfolio.git
    ```
 
 2. Move to the cloned directory:
